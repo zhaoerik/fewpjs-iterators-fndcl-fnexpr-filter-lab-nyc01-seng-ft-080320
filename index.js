@@ -1,8 +1,6 @@
 // Code your solution here
-let findMatching = function(arr, driver) {
-    arr.filter(el => {
-        if (el.toLowerCase() === driver.toLowerCase()) {
-            return el
-        }
-    })
+let findMatching = function (arr, driver) {
+    return arr.filter(el =>
+        el.toLowerCase() === driver.toLowerCase()
+    )
 }
