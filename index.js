@@ -4,3 +4,9 @@ let findMatching = function (arr, driver) {
         el.toLowerCase() === driver.toLowerCase()
     )
 }
+
+let fuzzyMatch = function (arr, driver) {
+    return arr.filter(el =>
+        driver.includes(el)
+    )
+}
