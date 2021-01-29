@@ -6,7 +6,7 @@ let findMatching = function (arr, driver) {
 }
 
 let fuzzyMatch = function (arr, driver) {
-    return arr.filter(el =>
-        driver.toLowerCase().indexOf(el.toLowerCase()) === 0
-    )
+    return arr.filter(el => {
+        if (driver.charAt(0) === el.charAt(0)) return el
+    })
 }
