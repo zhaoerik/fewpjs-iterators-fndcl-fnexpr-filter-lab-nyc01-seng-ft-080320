@@ -7,6 +7,6 @@ let findMatching = function (arr, driver) {
 
 let fuzzyMatch = function (arr, driver) {
     return arr.filter(el =>
-        driver.includes(el)
+        driver.toLowerCase().includes(el.toLowerCase())
     )
 }
