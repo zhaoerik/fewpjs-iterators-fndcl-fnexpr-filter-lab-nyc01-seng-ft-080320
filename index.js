@@ -10,3 +10,9 @@ let fuzzyMatch = function (arr, driver) {
         if (el.indexOf(driver) === 0) return el
     })
 }
+
+let matchName = function (arr, driver) {
+    return arr.filter(el =>
+        el.name === driver
+    )
+}
